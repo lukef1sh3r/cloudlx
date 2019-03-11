@@ -1,0 +1,26 @@
+<% include _head %>
+<% include _header %>
+
+<div class="container-fluid">
+  <h1 class="my-4"><%= service.name %></h1>
+  <table class="table table-striped">
+    <tr>
+      <td>Name</td>
+      <td><%= service.name %></td>
+    </tr>
+    <tr>
+      <td>Bandwidth</td>
+      <td><%= service.bandwidth %></td>
+    </tr>
+    <tr>
+      <td>Port Name</td>
+      <td><%= service.port.name %></td>
+    </tr>
+    <tr>
+      <td>Status</td>
+      <td><%= service.status %></td>
+    </tr>
+  </table>
+</div>
+
+<% include _foot %>

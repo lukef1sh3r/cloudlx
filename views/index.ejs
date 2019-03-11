@@ -1,0 +1,16 @@
+<% include _head %>
+<% include _header %>
+
+<div class="container-fluid">
+  <h1 class="my-4">Services</h1>
+  <table class="table table-striped table-hover">
+    <% for (var i=0; i < services.length; i++) { %>
+    <tr data-href='/services/<%= services[i].id %>'>
+      <td><%= services[i].id %></td>
+      <td><%= services[i].name %></td>
+    </tr>
+    <% } %>
+  </table>
+</div>
+
+<% include _foot %>
